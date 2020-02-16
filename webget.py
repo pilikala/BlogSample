@@ -14,7 +14,7 @@ try:
     web.close()
 
     if mediatype.startswith("text/"):
-        match = search(r'charset\s*=\s(.*)', mediatype, flags=I)
+        match = search(r'charset\s*=\s*(.*)', mediatype, flags=I)
         charset = match.group(1) if match else "utf-8"
         text = data.decode(charset)
         print(text, end="")
