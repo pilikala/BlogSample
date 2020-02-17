@@ -3,7 +3,7 @@ from sys import argv
 
 try:
     if len(argv) < 2:
-        print("Usage: webhead URL\n")
+        print("Usage: webhead URL")
         exit(0)
 
     url = argv[1]
